@@ -22,6 +22,8 @@ public class CaixeiroViajanteTeste {
     public void TesteExercicioMarco(){
         
     	CaixeiroViajante caixeiroViajante = new CaixeiroViajante();
+    	
+    	caixeiroViajante.carregarCidades();
     	Integer[][] custosTest = new Integer[5][5];
     	
     	custosTest[0][0] = 0; 	// A-A
@@ -53,6 +55,8 @@ public class CaixeiroViajanteTeste {
     	custosTest[4][2] = 120; // E-C
     	custosTest[4][3] = 199; // E-D
     	custosTest[4][4] = 0; 	// E-E
+    	
+    	caixeiroViajante.setCustos(custosTest);
 
         caixeiroViajante.algoritmoGanancioso();
 
@@ -68,8 +72,10 @@ public class CaixeiroViajanteTeste {
     public void Teste2(){
         
     	CaixeiroViajante caixeiroViajante = new CaixeiroViajante();
-    	Integer[][] custosTest = new Integer[5][5];
     	
+    	caixeiroViajante.carregarCidades();
+    	Integer[][] custosTest = new Integer[5][5];
+
     	custosTest[0][0] = 0; 	// A-A
     	custosTest[0][1] = 185; // A-B 
     	custosTest[0][2] = 119; // A-C
@@ -100,6 +106,8 @@ public class CaixeiroViajanteTeste {
     	custosTest[4][3] = 199; // E-D
     	custosTest[4][4] = 0; 	// E-E
 
+    	caixeiroViajante.setCustos(custosTest);
+    	
         caixeiroViajante.algoritmoGanancioso();
 
         Assert.assertTrue("Resultado A -> C = 119", caixeiroViajante.getPrecos(0) == 119);
