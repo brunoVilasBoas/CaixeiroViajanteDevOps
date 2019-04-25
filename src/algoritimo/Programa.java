@@ -7,7 +7,7 @@ public class Programa {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("Calculando Melhor Preço!");
+		System.out.println("Buscando rota com melhor preço!");
 		
 		caixeiroViajante = new CaixeiroViajante();
 		
