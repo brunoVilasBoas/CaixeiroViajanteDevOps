@@ -1,8 +1,9 @@
 package test;
 
+
+
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import algoritimo.CaixeiroViajante;
@@ -60,11 +61,11 @@ public class CaixeiroViajanteTeste {
 
         caixeiroViajante.algoritmoGanancioso();
 
-        Assert.assertTrue("Resultado A -> C = 119", caixeiroViajante.getPrecos(0) == 119);
-        Assert.assertTrue("Resultado C -> E = 120", caixeiroViajante.getPrecos(1) == 120);
-        Assert.assertTrue("Resultado E -> D = 199", caixeiroViajante.getPrecos(2) == 199);
-        Assert.assertTrue("Resultado D -> B = 150", caixeiroViajante.getPrecos(3) == 150);
-        Assert.assertTrue("Resultado B -> A = 185", caixeiroViajante.getPrecos(4) == 185);
+        assertTrue("Resultado A -> C = 119", caixeiroViajante.getPrecos(0) == 119);
+        assertTrue("Resultado C -> E = 120", caixeiroViajante.getPrecos(1) == 120);
+        assertTrue("Resultado E -> D = 199", caixeiroViajante.getPrecos(2) == 199);
+        assertTrue("Resultado D -> B = 150", caixeiroViajante.getPrecos(3) == 150);
+        assertTrue("Resultado B -> A = 185", caixeiroViajante.getPrecos(4) == 185);
 
     }
     
@@ -110,11 +111,11 @@ public class CaixeiroViajanteTeste {
     	
         caixeiroViajante.algoritmoGanancioso();
 
-        Assert.assertTrue("Resultado A -> C = 119", caixeiroViajante.getPrecos(0) == 119);
-        Assert.assertTrue("Resultado C -> E = 120", caixeiroViajante.getPrecos(1) == 120);
-        Assert.assertTrue("Resultado E -> D = 199", caixeiroViajante.getPrecos(2) == 199);
-        Assert.assertTrue("Resultado D -> B = 150", caixeiroViajante.getPrecos(3) == 150);
-        Assert.assertTrue("Resultado B -> A = 185", caixeiroViajante.getPrecos(4) == 185);
+        assertTrue("Resultado A -> C = 119", caixeiroViajante.getPrecos(0) == 119);
+        assertTrue("Resultado C -> E = 120", caixeiroViajante.getPrecos(1) == 120);
+        assertTrue("Resultado E -> D = 199", caixeiroViajante.getPrecos(2) == 199);
+        assertTrue("Resultado D -> B = 150", caixeiroViajante.getPrecos(3) == 150);
+        assertTrue("Resultado B -> A = 185", caixeiroViajante.getPrecos(4) == 185);
 
     }
     
